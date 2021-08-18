@@ -11,7 +11,7 @@ pipeline{
                }
            }     
         }
-
+        /*
         stage('unitTest'){
             steps{
                 nodejs(nodeJSInstallationName: 'nodejs'){
@@ -20,7 +20,7 @@ pipeline{
                 }
             }
 
-        }
+        }*/
 
         stage('deploy'){
             steps{
