@@ -16,7 +16,7 @@ pipeline{
             steps{
                 nodejs(nodeJSInstallationName: 'nodejs'){
                     sh 'npm run test:coverage && cp coverage/lcov.info lcov.info || echo "Code coverage failed"'
-                    archiveArtifacts(artifacts: 'coverage/**', onlyIfSuccessful: true) 
+                    archiveArtifacts(artifacts: 'coverage/**/*.*', onlyIfSuccessful: true) 
                 }
             }
 
